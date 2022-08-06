@@ -236,10 +236,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     gap: 120px;
 }
 
-.header {
-    /*ff fw*/
-}
-
 .feature__text-content {
     display: flex;
     flex-direction: column;
@@ -269,11 +265,17 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 /*reviews section*/
-.main__reviews {
+.bg-reviews {
+    background-color: #F8F8FA;
+}
+
+.reviews {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 70px;
+    /*todo fix this*/
+    padding: 70px 0;
 }
 
 .reviews__headers {
@@ -343,7 +345,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 /*lets start section*/
-.main__lets-start {
+.bg-darkblue {
+    background-color: #130C3A;
+}
+
+.lets-start {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -356,7 +362,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     line-height: 85px;
     font-weight: 900;
     text-align: center;
-    color: var(--accent-font-color);
+    color: #ffffff;
 }
 
 .lets-start__form {
@@ -389,6 +395,19 @@ footer {
     flex: 1 0 auto;
 }
 
+.footer-general__icons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.footer-general__icons img {
+    width: 20px;
+    height: 20px;
+    filter: invert(80%) sepia(10%) saturate(18%) hue-rotate(17deg) brightness(97%) contrast(92%);
+}
+
+
 footer div {
     display: flex;
     flex-direction: column;
@@ -399,6 +418,7 @@ footer div {
     font-size: 28px;
     line-height: 34px;
     font-weight: 700;
+    color: #ffffff;
 }
 
 .footer__links {
@@ -412,4 +432,19 @@ footer div {
     line-height: 28px;
     color: #7884A6;
     text-decoration: none;
+}
+
+/*postfooter*/
+.post-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 60px;
+    color: #ffffff;
+}
+
+.post-footer img {
+    width: 16px;
+    height: 16px;
 }
