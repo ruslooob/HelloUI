@@ -68,11 +68,20 @@ header {
     border: none;
     border-radius: 30px;
 }
+
 /*todo padding in try-for-free-btn in header and in intro section is not the same. Refactor it later*/
 .try-for-free-btn {
     padding: 20px 60px 15px 35px;
     background-color: var(--button-accent-color);
     color: #ffffff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 100px;
 }
 
 /*intro section*/
@@ -81,7 +90,7 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
     text-align: center;
 }
 
@@ -111,7 +120,68 @@ header {
     background-color: #ffffff;
     box-shadow: 0 10px 40px rgba(176, 201, 253, 0.3);
 }
+
 /*main product view section*/
 .main__product_view {
-    margin-top: 100px;
+    /*margin-top: 100px;*/
+    text-align: center;
+}
+
+.product_view__img {
+    object-fit: cover;
+    width: 966px;
+}
+
+/*companies section*/
+.main__companies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.companies__header {
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 400;
+}
+
+.swiper {
+    width: 960px;
+    height: 100px;
+    user-select: none;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide img {
+    height: 100px;
+    width: 90%;
+    object-fit: contain;
+}
+.swiper-pagination {
+    top: 80px;
+}
+/* target the active bullet */
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--accent-font-color);
+    opacity: 1;
+}
+
+/* target all bullets */
+.swiper-pagination-bullet {
+    width: 30px;
+    height: 3px;
+    border-radius: 0;
+    background-color: rgba(5, 0, 56, 0.5);
+    opacity: 1;
+    /*hide not active button (because figma layout have only 3 bullets)*/
+    visibility: hidden;
+}
+
+.swiper-pagination-bullet-active-main {
+    /*show only 3 active bullets*/
+    visibility: visible;
 }
