@@ -341,3 +341,40 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     font-weight: 400;
     line-height: 24px;
 }
+
+/*lets start section*/
+.main__lets-start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 150px 0;
+}
+
+.lets-start__header {
+    font-size: 72px;
+    line-height: 85px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--accent-font-color);
+}
+
+.lets-start__form {
+    display: flex;
+}
+
+.lets-start__form input {
+    width: 530px;
+    padding: 24px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.lets-start__form button {
+    padding: 25px 50px;
+    background-color: var(--button-accent-color);
+    color: white;
+    border-radius: 0 10px 10px 0;
+    border: none;
+}
