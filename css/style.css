@@ -378,3 +378,38 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     border-radius: 0 10px 10px 0;
     border: none;
 }
+
+/*footer section*/
+footer {
+    display: flex;
+    gap: 100px;
+}
+
+.footer-general {
+    flex: 1 0 auto;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer__header {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__links a {
+    font-size: 16px;
+    line-height: 28px;
+    color: #7884A6;
+    text-decoration: none;
+}
