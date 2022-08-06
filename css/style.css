@@ -20,7 +20,9 @@ html, body {
 }
 
 .container {
-    width: 1320px;
+    max-width: 1320px;
+    /*todo think about better way*/
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -69,7 +71,7 @@ header {
     border-radius: 30px;
 }
 
-/*todo padding in try-for-free-btn in header and in intro section is not the same. Refactor it later*/
+/*todo padding in try-for-free-btn in header and in intro section is not the equal. Refactor this later*/
 .try-for-free-btn {
     padding: 20px 60px 15px 35px;
     background-color: var(--button-accent-color);
@@ -185,3 +187,82 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     /*show only 3 active bullets*/
     visibility: visible;
 }
+
+/* logistic section*/
+.main__logistic-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.logistic__header {
+    font-family: 'Circular Std', sans-serif;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 53px;
+    color: var(--accent-font-color);
+}
+
+.logistic__text {
+    width: 780px;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.logistic__spellon-work-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: rgba(5, 85, 255, 0.1);
+    color: var(--button-accent-color);
+}
+
+.logistic__spellon-work-btn span {
+    font-size: 15px;
+    line-height: 32px;
+}
+
+/*develop section*/
+.main__develop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.header {
+    /*ff fw*/
+}
+
+.develop__text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.develop__header {
+    font-family: 'Circular Std', sans-serif;
+    font-size: 72px;
+    line-height: 91px;
+    font-weight: 900;
+    color: var(--accent-font-color);
+}
+
+.develop__text {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.develop__learn-more {
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 2px solid var(--button-accent-color);
+}
+
+/*build section*/
