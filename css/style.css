@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
+@import "../fonts/CircularStd-Medium/style.css";
+
+:root {
+    --accent-font-color: #050038;
+    --general-font-color: #5B5E6D;
+    --button-accent-color: #0555FF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    color: var(--general-font-color);
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+/*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-top: 30px;
+    color: var(--accent-font-color);
+}
+
+.header__logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    color: #000000;
+}
+
+.header__links {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.header__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+}
+
+.header__sign-in-link {
+    text-decoration: none;
+    color: var(--accent-font-color);
+}
+
+.btn {
+    font-size: 19px;
+    line-height: 23px;
+    border: none;
+    border-radius: 30px;
+}
+/*todo padding in try-for-free-btn in header and in intro section is not the same. Refactor it later*/
+.try-for-free-btn {
+    padding: 20px 60px 15px 35px;
+    background-color: var(--button-accent-color);
+    color: #ffffff;
+}
+
+/*intro section*/
+.main__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.intro__header {
+    font-family: 'Circular Std', sans-serif;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 120px;
+    color: var(--accent-font-color);
+}
+
+.intro__text {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.intro__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+.intro__discover-video-btn {
+    padding: 20px 40px;
+    color: var(--button-accent-color);
+    background-color: #ffffff;
+    box-shadow: 0 10px 40px rgba(176, 201, 253, 0.3);
+}
+/*main product view section*/
+.main__product_view {
+    margin-top: 100px;
+}
