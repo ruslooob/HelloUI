@@ -226,7 +226,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 /*develop section*/
-.main__develop {
+.main__develop, .main__build, .main__update {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,13 +237,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     /*ff fw*/
 }
 
-.develop__text-content {
+.feature__text-content {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.develop__header {
+.feature__header {
     font-family: 'Circular Std', sans-serif;
     font-size: 72px;
     line-height: 91px;
@@ -251,13 +251,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     color: var(--accent-font-color);
 }
 
-.develop__text {
+.feature__text {
     font-size: 20px;
     line-height: 32px;
     font-weight: 400;
 }
 
-.develop__learn-more {
+.feature__learn-more {
     font-size: 18px;
     line-height: 22px;
     color: #000000;
